@@ -1,0 +1,23 @@
+# Infrarouge
+http://poivron-robotique.fr/Balises-2012.html
+http://www.totofweb.net/robots-projet-67.html
+http://simon.chaudeurge.free.fr/DIY/index.php/post/Fabriquer-une-balise-InfraRouge
+http://fribotte.free.fr/bdtech/BaliseIR/baliseIR.html
+
+
+# Ultrason :
+http://robot-eseo.fr/wiki/index.php?title=Electronique:Carte_Balise:Balises_US_2011
+
+
+#Principe 1 (le plus simple logiciellement)
+Balise emmetrice robot adverse
+balise receptrice notre robot = permet d'éviter le robot adverse
+
+
+#Principe 2
+Balise reception sur notre robot, et balise emmetrices fixe.
+Envoi de message synchronisé pour être décallé. Permet de se trianguler et donc de se positionner sur la table.
+La même opération effectué par le robot adverse qui nous envoie en plus sa position.
+décodage en // avec un mbed nucléo (32IR au moins)
+
+
