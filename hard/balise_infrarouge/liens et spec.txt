@@ -35,6 +35,7 @@ recepteur angle détection de 45 degré 360/45 = 8 donc en théorie 8 suffises
 Si on en met 15, cela fait comme s'ils avaient un angle de 24 degré
 pas de demux : 18 entrée + rx/tx
 
+Gestion des envoies réception avec la lib IR remote (gère la modulaton avec des timer)
 
 
 
