@@ -24,11 +24,11 @@ décodage en // avec un mbed nucléo (32IR au moins)
 
 # Spec
 ## Balise emmetrice
-32 LED IR modulées 38Khz
-Modulation effectuée avec un NE555 en astable. Commandé par le microP qui envoie une trame de 12 bits en UART
-slot xbee pour la synchro (futur)
-potentiomètre pour régler la puissance des leds (pour éviter les réflexions)
-Les LED on un angle de difusion de 15-30 degré. Si on prend 10 degré, il faut donc driver 36 leds (ou 24 led pour 15 degrés)
+* 32 LED IR modulées 38Khz
+* Commandé par le microP qui envoie une trame de 12 bits en UART
+Slot xbee pour la synchro (futur)
+potentiomètre numérique pour régler logiciellement la puissance des leds (pour éviter les réflexions) et eventuellement s'en servir pour connaitre la distance (puissance minimale pour que le récepteur recoive)
+
 
 ## Balise receptrice
 recepteur angle détection de 45 degré 360/45 = 8 donc en théorie 8 suffises

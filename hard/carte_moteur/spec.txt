@@ -1,0 +1,6 @@
+
+* 4 moteur DC
+** 3 avec qei et sonde de courants
+1 moteur PAP
+
+ADC en i2C (retour courant) : http://www.analog.com/en/analog-to-digital-converters/ad-converters/ad7991/products/product.html
