@@ -1,6 +1,11 @@
 
 * 4 moteur DC
 ** 3 avec qei et sonde de courants
-1 moteur PAP
+* PWM et sens commandable avec HEADER et Connecteur micromatch 6p (carte puissance 2014)
+isolateur de bus i2C 
 
 ADC en i2C (retour courant) : http://www.analog.com/en/analog-to-digital-converters/ad-converters/ad7991/products/product.html
+
+
+Questions :
+* est ce la peine de rajouter des servomoteurs avec un PTH pour founir du 5V à partir de la tension moteur ?
