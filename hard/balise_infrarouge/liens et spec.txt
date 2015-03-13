@@ -1,3 +1,9 @@
+A commander : 
+porte xor :
+http://www.ti.com/product/SN74LVC1G86/samplebuy
+Régulateur 5V SOT23
+http://www.ti.com/product/LM1117-N/samplebuy
+
 # Infrarouge
 * http://poivron-robotique.fr/Balises-2012.html
 * http://www.totofweb.net/robots-projet-67.html
