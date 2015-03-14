@@ -14460,7 +14460,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="LED_ALIM" library="adafruit" deviceset="LED" device="CHIPLED_0805"/>
 <part name="R2" library="adafruit" deviceset="R-US_" device="M0805" value="1k"/>
 <part name="V14" library="supply3" deviceset="+5V" device=""/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="ARDUINO_SERIAL_PROGRAM" device="PTH"/>
+<part name="FTDI_ARDUINO" library="SparkFun-Connectors" deviceset="ARDUINO_SERIAL_PROGRAM" device="PTH"/>
 <part name="V15" library="supply3" deviceset="+5V" device=""/>
 <part name="GND10" library="supply3" deviceset="GND" device=""/>
 <part name="R14" library="adafruit" deviceset="R-US_" device="M0805" value="4k"/>
@@ -14574,7 +14574,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="LED_ALIM" gate="G$1" x="86.36" y="111.76" rot="R90"/>
 <instance part="R2" gate="G$1" x="99.06" y="111.76" rot="R180"/>
 <instance part="V14" gate="+5V" x="76.2" y="114.3"/>
-<instance part="JP2" gate="G$1" x="238.76" y="81.28" rot="R180"/>
+<instance part="FTDI_ARDUINO" gate="G$1" x="238.76" y="81.28" rot="R180"/>
 <instance part="V15" gate="+5V" x="226.06" y="78.74" rot="R90"/>
 <instance part="GND10" gate="1" x="223.52" y="73.66" rot="R270"/>
 <instance part="R14" gate="G$1" x="162.56" y="91.44" rot="R180"/>
@@ -14699,7 +14699,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="114.3" y1="111.76" x2="104.14" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="GND"/>
+<pinref part="FTDI_ARDUINO" gate="G$1" pin="GND"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="226.06" y1="73.66" x2="233.68" y2="73.66" width="0.1524" layer="91"/>
 </segment>
@@ -14831,7 +14831,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="76.2" y1="111.76" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="VCC"/>
+<pinref part="FTDI_ARDUINO" gate="G$1" pin="VCC"/>
 <pinref part="V15" gate="+5V" pin="+5V"/>
 <wire x1="228.6" y1="78.74" x2="233.68" y2="78.74" width="0.1524" layer="91"/>
 </segment>
@@ -15122,7 +15122,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <segment>
 <wire x1="233.68" y1="83.82" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
 <label x="218.44" y="83.82" size="1.778" layer="95"/>
-<pinref part="JP2" gate="G$1" pin="RXI"/>
+<pinref part="FTDI_ARDUINO" gate="G$1" pin="RXI"/>
 <junction x="233.68" y="83.82"/>
 </segment>
 </net>
@@ -15216,7 +15216,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="IC1" gate="G$1" pin="PD0(RXD)"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="TXO"/>
+<pinref part="FTDI_ARDUINO" gate="G$1" pin="TXO"/>
 <wire x1="233.68" y1="81.28" x2="220.98" y2="81.28" width="0.1524" layer="91"/>
 <label x="218.44" y="81.28" size="1.778" layer="95"/>
 </segment>
