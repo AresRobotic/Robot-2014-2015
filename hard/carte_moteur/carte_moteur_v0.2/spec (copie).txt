@@ -1,0 +1,19 @@
+
+* 4 moteur DC
+** 3 avec qei et sonde de courants
+* PWM et sens commandable avec HEADER et Connecteur micromatch 6p (carte puissance 2014)
+isolateur de bus i2C 
+* permet d'alimenter ou nom la mbed avec un jumper
+
+ADC en i2C (retour courant) : http://www.analog.com/en/analog-to-digital-converters/ad-converters/ad7991/products/product.html
+
+
+Questions :
+* est ce la peine de rajouter des servomoteurs avec un PTH pour founir du 5V à partir de la tension moteur ?
+
+
+PCA9651 : générateur de PWM en I2C
+ISO1541 : isolateur de bus I2C
+DRV8840 : pont à H
+ADC128D818 : adc en i2C -> ATTENTION aux tensions mesurable
+

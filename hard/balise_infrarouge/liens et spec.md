@@ -1,18 +1,21 @@
-A commander : 
-porte xor :
-http://www.ti.com/product/SN74LVC1G86/samplebuy
-Régulateur 5V SOT23
-http://www.ti.com/product/LM1117-N/samplebuy
+# A commander : 
+* porte xor :
+**http://www.ti.com/product/SN74LVC1G86/samplebuy
+* Régulateur 5V SOT23
+**http://www.ti.com/product/LM1117-N/samplebuy
+* ENSEA
+** TIP122 : transistor NPN boitier TO220
+** potentiomettre 3Khom
+** crystal 16Mhz
+** Régulateur 12V 7812
 
-# Infrarouge
+
+# Exemples de balises IR
 * http://poivron-robotique.fr/Balises-2012.html
 * http://www.totofweb.net/robots-projet-67.html
 * http://simon.chaudeurge.free.fr/DIY/index.php/post/Fabriquer-une-balise-InfraRouge
 * http://fribotte.free.fr/bdtech/BaliseIR/baliseIR.html
 * http://www.pobot.org/Capteur-IR-circulaire.html?lang=fr
-
-# Ultrason :
-http://robot-eseo.fr/wiki/index.php?title=Electronique:Carte_Balise:Balises_US_2011
 
 
 # Fonctionnement 
