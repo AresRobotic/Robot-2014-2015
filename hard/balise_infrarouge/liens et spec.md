@@ -1,9 +1,10 @@
 # A commander : 
-* porte xor :
-**http://www.ti.com/product/SN74LVC1G86/samplebuy
-* Régulateur 5V SOT23
-**http://www.ti.com/product/LM1117-N/samplebuy
+* Sample TI :
+
+** porte xor : http://www.ti.com/product/SN74LVC1G86/samplebuy
+** Régulateur 5V SOT23 http://www.ti.com/product/LM1117-N/samplebuy
 * ENSEA
+
 ** TIP122 : transistor NPN boitier TO220
 ** potentiomettre 3Khom
 ** crystal 16Mhz
@@ -34,9 +35,9 @@ décodage en // avec un mbed nucléo (32IR au moins)
 # Spec
 ## Balise emmetrice
 * 32 LED IR modulées 38Khz
-* Commandé par le microP qui envoie une trame de 12 bits en UART
-Slot xbee pour la synchro (futur)
-potentiomètre numérique pour régler logiciellement la puissance des leds (pour éviter les réflexions) et eventuellement s'en servir pour connaitre la distance (puissance minimale pour que le récepteur recoive)
+* Commandé par le microP (ATMEGA328p) qui envoie une trame de 12 bits en UART
+Synchro sans fil avec un nrf24l01 ou xbee (pins dispoavec sortie UART et SPI).
+Potentiomettre permettant de réguler la puissance d'emmission
 
 
 ## Balise receptrice
@@ -44,7 +45,6 @@ recepteur angle détection de 45 degré 360/45 = 8 donc en théorie 8 suffises
 Si on en met 15, cela fait comme s'ils avaient un angle de 24 degré
 pas de demux : 18 entrée + rx/tx
 
-Gestion des envoies réception avec la lib IR remote (gère la modulaton avec des timer)
 
 
 
