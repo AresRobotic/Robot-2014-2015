@@ -1,10 +1,8 @@
 # A commander : 
 * Sample TI :
-
 ** porte xor : http://www.ti.com/product/SN74LVC1G86/samplebuy
 ** Régulateur 5V SOT23 http://www.ti.com/product/LM1117-N/samplebuy
 * ENSEA
-
 ** TIP122 : transistor NPN boitier TO220
 ** potentiomettre 3Khom
 ** crystal 16Mhz
