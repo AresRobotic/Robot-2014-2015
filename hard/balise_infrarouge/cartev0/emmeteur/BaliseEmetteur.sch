@@ -50,6 +50,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -82,6 +84,7 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
@@ -14420,7 +14423,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="LED22" library="led" deviceset="LED" device="B155"/>
 <part name="LED23" library="led" deviceset="LED" device="B155"/>
 <part name="LED24" library="led" deviceset="LED" device="B155"/>
-<part name="FRAME2" library="frames" deviceset="A4L-LOC" device=""/>
+<part name="TEST" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="BATTERY_18V" library="con-ptr500" deviceset="AK500/2" device="" value="ALIM"/>
 <part name="V4" library="supply2" deviceset="+12V" device=""/>
 <part name="V5" library="supply2" deviceset="+12V" device=""/>
@@ -14487,13 +14490,14 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <text x="160.02" y="73.66" size="1.778" layer="91">Réglage du courant</text>
 <text x="10.16" y="17.78" size="1.778" layer="91">Attention : le montage est fait pour fonctionner en pulse</text>
 <text x="10.16" y="10.16" size="1.778" layer="91">Une activation continue du transistor peut cramer les leds d'émission</text>
+<text x="163.83" y="13.97" size="2.794" layer="94" font="vector" ratio="14">show0k pour Ares 2015</text>
 </plain>
 <instances>
-<instance part="H1" gate="G$1" x="172.72" y="15.24" rot="R90"/>
-<instance part="H2" gate="G$1" x="182.88" y="15.24" rot="R90"/>
-<instance part="H3" gate="G$1" x="193.04" y="15.24" rot="R90"/>
-<instance part="H4" gate="G$1" x="203.2" y="15.24" rot="R90"/>
-<instance part="GND2" gate="1" x="187.96" y="7.62"/>
+<instance part="H1" gate="G$1" x="210.82" y="43.18" rot="R90"/>
+<instance part="H2" gate="G$1" x="220.98" y="43.18" rot="R90"/>
+<instance part="H3" gate="G$1" x="231.14" y="43.18" rot="R90"/>
+<instance part="H4" gate="G$1" x="241.3" y="43.18" rot="R90"/>
+<instance part="GND2" gate="1" x="226.06" y="35.56"/>
 <instance part="V2" gate="+5V" x="30.48" y="50.8"/>
 <instance part="GND1" gate="1" x="30.48" y="38.1"/>
 <instance part="Q1" gate="G$1" x="30.48" y="71.12" smashed="yes" rot="R270">
@@ -14532,7 +14536,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="LED22" gate="G$1" x="241.3" y="142.24"/>
 <instance part="LED23" gate="G$1" x="241.3" y="132.08"/>
 <instance part="LED24" gate="G$1" x="241.3" y="121.92"/>
-<instance part="FRAME2" gate="G$1" x="0" y="0"/>
+<instance part="TEST" gate="G$1" x="0" y="0"/>
 <instance part="BATTERY_18V" gate="-1" x="17.78" y="134.62"/>
 <instance part="BATTERY_18V" gate="-2" x="17.78" y="129.54"/>
 <instance part="V4" gate="+12V" x="127" y="160.02"/>
@@ -14600,17 +14604,17 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <nets>
 <net name="GND" class="0">
 <segment>
-<wire x1="187.96" y1="10.16" x2="193.04" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="10.16" x2="203.2" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="10.16" x2="203.2" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="15.24" x2="193.04" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="10.16" x2="182.88" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="10.16" x2="182.88" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="10.16" x2="172.72" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="10.16" x2="172.72" y2="15.24" width="0.1524" layer="91"/>
-<junction x="193.04" y="10.16"/>
-<junction x="187.96" y="10.16"/>
-<junction x="182.88" y="10.16"/>
+<wire x1="226.06" y1="38.1" x2="231.14" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="38.1" x2="241.3" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="38.1" x2="241.3" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="43.18" x2="231.14" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="38.1" x2="220.98" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="38.1" x2="220.98" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="38.1" x2="210.82" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="38.1" x2="210.82" y2="43.18" width="0.1524" layer="91"/>
+<junction x="231.14" y="38.1"/>
+<junction x="226.06" y="38.1"/>
+<junction x="220.98" y="38.1"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="H4" gate="G$1" pin="MOUNT"/>
 <pinref part="H3" gate="G$1" pin="MOUNT"/>

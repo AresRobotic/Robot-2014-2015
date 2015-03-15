@@ -3529,6 +3529,50 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </deviceset>
 </devicesets>
 </library>
+<library name="WEIDMULLER">
+<packages>
+<package name="SL-3.5-2-90G">
+<pad name="2" x="0" y="1.75" drill="1.4" diameter="2.8"/>
+<pad name="1" x="0" y="-1.75" drill="1.4" diameter="2.8"/>
+<wire x1="0.5" y1="4.1" x2="0.5" y2="-4.1" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-4.1" x2="-10.5" y2="-4.1" width="0.127" layer="21"/>
+<wire x1="-10.5" y1="-4.1" x2="-10.5" y2="4.1" width="0.127" layer="21"/>
+<wire x1="-10.5" y1="4.1" x2="0.5" y2="4.1" width="0.127" layer="21"/>
+<text x="-8.89" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-8.89" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="SL-3.5-2">
+<pin name="2" x="5.08" y="2.54" length="middle" rot="R180"/>
+<pin name="1" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<wire x1="0" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
+<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SL-3.5-2-90G">
+<gates>
+<gate name="G$1" symbol="SL-3.5-2" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="SL-3.5-2-90G">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3570,6 +3614,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
+<part name="IN_5V" library="WEIDMULLER" deviceset="SL-3.5-2-90G" device=""/>
+<part name="P+4" library="supply1" deviceset="+5V" device=""/>
+<part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3579,7 +3626,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="234.95" y1="-30.48" x2="173.99" y2="-30.48" width="1.016" layer="94"/>
 <wire x1="173.99" y1="-30.48" x2="173.99" y2="90.17" width="1.016" layer="94"/>
 <text x="176.53" y="92.71" size="5.08" layer="94">Connexions Sharp</text>
-<text x="177.8" y="-58.42" size="2.54" layer="94">show0k pour Ares 2015</text>
+<text x="170.18" y="-58.42" size="2.794" layer="94" font="vector" ratio="14">show0k pour Ares 2015</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="7.62" y="-72.39"/>
@@ -3592,33 +3639,36 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="SHARP5" gate="G$1" x="212.09" y="-19.05" rot="R180"/>
 <instance part="C7" gate="G$1" x="199.39" y="77.47" rot="R270"/>
 <instance part="P+3" gate="1" x="209.55" y="74.93"/>
-<instance part="SV1" gate="1" x="82.55" y="49.53" rot="R180"/>
-<instance part="P+10" gate="1" x="72.39" y="59.69"/>
-<instance part="GND1" gate="1" x="62.23" y="54.61" rot="R180"/>
+<instance part="SV1" gate="1" x="78.74" y="78.74" rot="R180"/>
+<instance part="P+10" gate="1" x="68.58" y="88.9"/>
+<instance part="GND1" gate="1" x="58.42" y="83.82" rot="R180"/>
 <instance part="GND2" gate="1" x="191.77" y="64.77"/>
 <instance part="GND3" gate="1" x="124.46" y="60.96"/>
 <instance part="GND4" gate="1" x="97.79" y="1.27"/>
-<instance part="SV2" gate="1" x="82.55" y="25.4" rot="R180"/>
-<instance part="P+1" gate="1" x="72.39" y="35.56"/>
-<instance part="GND5" gate="1" x="62.23" y="30.48" rot="R180"/>
-<instance part="LED_CARTE_MERE" gate="G$1" x="120.65" y="-15.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="130.302" y="-11.684" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="122.682" y="-9.525" size="1.778" layer="96" rot="R180"/>
+<instance part="SV2" gate="1" x="46.99" y="80.01" rot="R180"/>
+<instance part="P+1" gate="1" x="36.83" y="90.17"/>
+<instance part="GND5" gate="1" x="26.67" y="85.09" rot="R180"/>
+<instance part="LED_CARTE_MERE" gate="G$1" x="57.15" y="64.77" smashed="yes" rot="R90">
+<attribute name="NAME" x="66.802" y="68.326" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="59.182" y="70.485" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R1" gate="G$1" x="110.49" y="-15.24">
-<attribute name="OC_FARNELL" x="110.49" y="-12.7" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="MF" x="110.49" y="-12.7" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="MPN" x="110.49" y="-12.7" size="1.778" layer="96" rot="R270" display="off"/>
+<instance part="R1" gate="G$1" x="46.99" y="64.77">
+<attribute name="OC_FARNELL" x="46.99" y="67.31" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MF" x="46.99" y="67.31" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="46.99" y="67.31" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="LED_BLUETOOTH" gate="G$1" x="123.19" y="-29.21" smashed="yes" rot="R90">
-<attribute name="NAME" x="132.842" y="-25.654" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="125.222" y="-23.495" size="1.778" layer="96" rot="R180"/>
+<instance part="LED_BLUETOOTH" gate="G$1" x="59.69" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="69.342" y="54.356" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="61.722" y="56.515" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R2" gate="G$1" x="113.03" y="-29.21">
-<attribute name="OC_FARNELL" x="113.03" y="-26.67" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="MF" x="113.03" y="-26.67" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="MPN" x="113.03" y="-26.67" size="1.778" layer="96" rot="R270" display="off"/>
+<instance part="R2" gate="G$1" x="49.53" y="50.8">
+<attribute name="OC_FARNELL" x="49.53" y="53.34" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MF" x="49.53" y="53.34" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="49.53" y="53.34" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
+<instance part="IN_5V" gate="G$1" x="45.72" y="24.13"/>
+<instance part="P+4" gate="1" x="58.42" y="31.75"/>
+<instance part="GND6" gate="1" x="58.42" y="11.43"/>
 </instances>
 <busses>
 <bus name="SHARP[0..4]">
@@ -3665,8 +3715,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <pinref part="SV2" gate="1" pin="4"/>
-<wire x1="64.77" y1="22.86" x2="74.93" y2="22.86" width="0.1524" layer="91"/>
-<label x="59.69" y="22.86" size="1.778" layer="95"/>
+<wire x1="29.21" y1="77.47" x2="39.37" y2="77.47" width="0.1524" layer="91"/>
+<label x="24.13" y="77.47" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SERIAL2_TX" class="0">
@@ -3677,13 +3727,13 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <pinref part="SV2" gate="1" pin="3"/>
-<wire x1="64.77" y1="25.4" x2="74.93" y2="25.4" width="0.1524" layer="91"/>
-<label x="59.69" y="25.4" size="1.778" layer="95"/>
+<wire x1="29.21" y1="80.01" x2="39.37" y2="80.01" width="0.1524" layer="91"/>
+<label x="24.13" y="80.01" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="105.41" y1="-15.24" x2="97.79" y2="-15.24" width="0.1524" layer="91"/>
-<label x="88.9" y="-15.24" size="1.778" layer="95"/>
+<wire x1="41.91" y1="64.77" x2="34.29" y2="64.77" width="0.1524" layer="91"/>
+<label x="25.4" y="64.77" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3732,7 +3782,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <pinref part="SV1" gate="1" pin="2"/>
-<wire x1="62.23" y1="52.07" x2="74.93" y2="52.07" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="81.28" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -3742,8 +3792,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <pinref part="SV2" gate="1" pin="2"/>
-<wire x1="62.23" y1="27.94" x2="74.93" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="26.67" y1="82.55" x2="39.37" y2="82.55" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IN_5V" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="21.59" x2="58.42" y2="21.59" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="13.97" x2="58.42" y2="21.59" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -3788,25 +3844,31 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <pinref part="P+10" gate="1" pin="+5V"/>
-<wire x1="72.39" y1="57.15" x2="72.39" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="86.36" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="SV1" gate="1" pin="1"/>
-<wire x1="72.39" y1="54.61" x2="74.93" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="83.82" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="72.39" y1="33.02" x2="72.39" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="36.83" y1="87.63" x2="36.83" y2="85.09" width="0.1524" layer="91"/>
 <pinref part="SV2" gate="1" pin="1"/>
-<wire x1="72.39" y1="30.48" x2="74.93" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="36.83" y1="85.09" x2="39.37" y2="85.09" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED_CARTE_MERE" gate="G$1" pin="C"/>
-<wire x1="125.73" y1="-15.24" x2="132.08" y2="-15.24" width="0.1524" layer="91"/>
-<label x="133.35" y="-15.24" size="1.778" layer="95"/>
+<wire x1="62.23" y1="64.77" x2="68.58" y2="64.77" width="0.1524" layer="91"/>
+<label x="69.85" y="64.77" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LED_BLUETOOTH" gate="G$1" pin="C"/>
-<wire x1="128.27" y1="-29.21" x2="134.62" y2="-29.21" width="0.1524" layer="91"/>
-<label x="135.89" y="-29.21" size="1.778" layer="95"/>
+<wire x1="64.77" y1="50.8" x2="71.12" y2="50.8" width="0.1524" layer="91"/>
+<label x="72.39" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IN_5V" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="26.67" x2="58.42" y2="26.67" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="26.67" x2="58.42" y2="29.21" width="0.1524" layer="91"/>
+<pinref part="P+4" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="MUX0_A" class="0">
@@ -3934,8 +3996,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <net name="RX_SOFT" class="0">
 <segment>
 <pinref part="SV1" gate="1" pin="3"/>
-<wire x1="64.77" y1="49.53" x2="74.93" y2="49.53" width="0.1524" layer="91"/>
-<label x="62.23" y="49.53" size="1.778" layer="95"/>
+<wire x1="60.96" y1="78.74" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
+<label x="58.42" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="*D6"/>
@@ -3946,8 +4008,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <net name="TX_SOFT" class="0">
 <segment>
 <pinref part="SV1" gate="1" pin="4"/>
-<wire x1="64.77" y1="46.99" x2="74.93" y2="46.99" width="0.1524" layer="91"/>
-<label x="62.23" y="46.99" size="1.778" layer="95"/>
+<wire x1="60.96" y1="76.2" x2="71.12" y2="76.2" width="0.1524" layer="91"/>
+<label x="58.42" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="D7"/>
@@ -3956,22 +4018,22 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="107.95" y1="-29.21" x2="100.33" y2="-29.21" width="0.1524" layer="91"/>
-<label x="91.44" y="-29.21" size="1.778" layer="95"/>
+<wire x1="44.45" y1="50.8" x2="36.83" y2="50.8" width="0.1524" layer="91"/>
+<label x="27.94" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="LED_CARTE_MERE" gate="G$1" pin="A"/>
-<wire x1="115.57" y1="-15.24" x2="118.11" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="52.07" y1="64.77" x2="54.61" y2="64.77" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="LED_BLUETOOTH" gate="G$1" pin="A"/>
-<wire x1="118.11" y1="-29.21" x2="120.65" y2="-29.21" width="0.1524" layer="91"/>
+<wire x1="54.61" y1="50.8" x2="57.15" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
