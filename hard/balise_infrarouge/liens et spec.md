@@ -2,7 +2,7 @@
 * Sample TI :
   * porte xor : http://www.ti.com/product/SN74LVC1G86/samplebuy
   * Régulateur 5V SOT23 http://www.ti.com/product/LM1117-N/samplebuy
-  * demux http://www.ti.com/product/SN74LV4051A-EP/samplebuy et http://www.ti.com/product/SN74LV4051A-EP/samplebuy
+  * demux http://www.ti.com/product/SN74LV4051A/samplebuy et http://www.ti.com/product/SN74LV4051A-EP/samplebuy
   
 * ENSEA
   * TIP122 : transistor NPN boitier TO220
