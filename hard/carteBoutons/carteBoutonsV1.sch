@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2884,7 +2884,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="H2" library="holes" deviceset="MOUNT-PAD-ROUND" device="3.2" value=""/>
 <part name="H3" library="holes" deviceset="MOUNT-PAD-ROUND" device="3.2" value=""/>
 <part name="H4" library="holes" deviceset="MOUNT-PAD-ROUND" device="3.2" value=""/>
-<part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2983,7 +2982,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="H2" gate="G$1" x="-40.64" y="109.22" rot="R90"/>
 <instance part="H3" gate="G$1" x="-30.48" y="109.22" rot="R90"/>
 <instance part="H4" gate="G$1" x="-20.32" y="109.22" rot="R90"/>
-<instance part="SUPPLY11" gate="GND" x="-35.56" y="99.06"/>
 </instances>
 <busses>
 </busses>
@@ -3132,25 +3130,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="SUPPLY10" gate="GND" pin="GND"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="-2.54" y1="43.18" x2="-2.54" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="-35.56" y1="104.14" x2="-30.48" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="104.14" x2="-20.32" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="104.14" x2="-20.32" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="109.22" x2="-30.48" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="104.14" x2="-40.64" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="104.14" x2="-40.64" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="104.14" x2="-50.8" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="104.14" x2="-50.8" y2="109.22" width="0.1524" layer="91"/>
-<junction x="-30.48" y="104.14"/>
-<junction x="-35.56" y="104.14"/>
-<junction x="-40.64" y="104.14"/>
-<pinref part="H4" gate="G$1" pin="MOUNT"/>
-<pinref part="H3" gate="G$1" pin="MOUNT"/>
-<pinref part="H2" gate="G$1" pin="MOUNT"/>
-<pinref part="H1" gate="G$1" pin="MOUNT"/>
-<wire x1="-35.56" y1="101.6" x2="-35.56" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="SUPPLY11" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="N$15" class="0">
